@@ -2,7 +2,6 @@
 # define CONFIG_HPP
 
 # include "../webserv.hpp"
-# include "ServerConfig.hpp"
 
 class BaseConfig {
     protected:
@@ -47,11 +46,11 @@ class BaseConfig {
         void setAutoindex(bool ai) { _autoindex = ai; }
         void addErrorPage(int code, const std::string& path) { _error_pages[code] = path; }
 
-        const std::string&              getRoot() const { return _root; }
-        const std::vector<std::string>& getIndex() const { return _index; }
-        size_t                          getMaxBody() const { return _client_max_body; }
-        bool                            getAutoindex() const { return _autoindex; }
-        const std::map<int, std::string>& getErrorPages() const { return _error_pages; }
+        const std::string&                  getRoot() const { return _root; }
+        const std::vector<std::string>&     getIndex() const { return _index; }
+        size_t                              getMaxBody() const { return _client_max_body; }
+        bool                                getAutoindex() const { return _autoindex; }
+        const std::map<int, std::string>&   getErrorPages() const { return _error_pages; }
 };
 
 #endif
