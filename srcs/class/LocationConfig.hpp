@@ -1,7 +1,7 @@
 #ifndef LOCATIONCONFIG_HPP
 # define LOCATIONCONFIG_HPP
 
-# include "../webserv.hpp"
+# include "../../webserv.hpp"
 # include "Config.hpp"
 
 class LocationConfig : public BaseConfig {

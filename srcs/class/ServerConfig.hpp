@@ -1,7 +1,7 @@
 #ifndef SERVERCONFIG_HPP
 # define SERVERCONFIG_HPP
 
-# include "../webserv.hpp"
+# include "../../webserv.hpp"
 # include "Config.hpp"
 # include "LocationConfig.hpp"
 

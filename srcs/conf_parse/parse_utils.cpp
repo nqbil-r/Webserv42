@@ -1,4 +1,4 @@
-#include "../webserv.hpp"
+#include "../../webserv.hpp"
 #include "../class/ServerConfig.hpp"
 
 void collect_args(const std::vector<std::string>& tokens, size_t& i, std::vector<std::string>& args) {

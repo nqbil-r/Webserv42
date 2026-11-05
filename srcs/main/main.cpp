@@ -1,4 +1,6 @@
-#include "webserv.hpp"
+#include "../../webserv.hpp"
+#include "../class/ServerManager.hpp"
+#include "../class/ServerConfig.hpp"
 
 int main(int ac, char **av) {
     if (ac != 2) {
@@ -15,6 +17,16 @@ int main(int ac, char **av) {
     if (valid_conf(tokens) < 0) {
         return 1;
     }
-    std::cout << "Validated!" << std::endl;
+    std::vector<ServerConfig> servers = parse_servers(tokens);
+    print_configs(servers);
+
+    ServerManager manager(servers);
+    if (!manager.init())
+        return 1;
+    manager.run();
+    std::cout << "Configuration setted up!" << std::endl;
+
+    
+
     return 0;
 }

@@ -1,4 +1,4 @@
-#include "../webserv.hpp"
+#include "../../webserv.hpp"
 
 int valid_conf(const std::vector<std::string>& tokens) {
     if (tokens.empty()) {

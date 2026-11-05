@@ -1,7 +1,7 @@
 #ifndef SESSION_MANAGER_HPP
 # define SESSION_MANAGER_HPP
 
-# include "../webserv.hpp"
+# include "../../webserv.hpp"
 
 struct SessionData {
     std::time_t                         created_at;

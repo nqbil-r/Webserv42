@@ -1,4 +1,4 @@
-#include "../webserv.hpp"
+#include "../../webserv.hpp"
 
 std::string get_conf(const char *file) {
     std::ifstream ifs(file);

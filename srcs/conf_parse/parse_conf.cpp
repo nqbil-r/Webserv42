@@ -1,4 +1,4 @@
-#include "../webserv.hpp"
+#include "../../webserv.hpp"
 #include "../class/ServerConfig.hpp"
 
 std::vector<ServerConfig> parse_servers(const std::vector<std::string>& tokens) {
